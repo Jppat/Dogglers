@@ -54,10 +54,16 @@ class DogCardAdapter(
         //  if the layout variable is Layout.GRID the grid list item should be used. Otherwise the
         //  the vertical/horizontal list item should be used.
 
-        val layoutType: Int = if (layout == Layout.HORIZONTAL || layout == Layout.VERTICAL){
+/*        val layoutType: Int = if (layout == Layout.HORIZONTAL || layout == Layout.VERTICAL){
             R.layout.vertical_horizontal_list_item
         } else {
             R.layout.grid_list_item
+        }*/
+
+        val layoutType = when (layout) {
+            Layout.HORIZONTAL, Layout.VERTICAL -> R.layout.vertical_horizontal_list_item
+            Layout.GRID -> R.layout.grid_list_item
+            else -> R.layout.vertical_horizontal_list_item
         }
 
         // TODO Inflate the layout
@@ -74,19 +80,17 @@ class DogCardAdapter(
     override fun onBindViewHolder(holder: DogCardViewHolder, position: Int) {
         // TODO: Get the data at the current position
         val dogItem = dogsList[position]
-        val resources = context?.resources
         // TODO: Set the image resource for the current dog
+        holder.imageView?.setImageResource(dogItem.imageResourceId)
         // TODO: Set the text for the current dog's name
+        holder.nameTextView?.text = dogItem.name
+        val resources = context?.resources
         // TODO: Set the text for the current dog's age
+        holder.ageTextView?.text = resources?.getString(R.string.dog_age, dogItem.age)
         // TODO: Set the text for the current dog's hobbies by passing the hobbies to the
         //  R.string.dog_hobbies string constant.
         //  Passing an argument to the string resource looks like:
         //  resources?.getString(R.string.dog_hobbies, dog.hobbies)
-        holder.imageView?.setImageResource(dogItem.imageResourceId)
-        if (resources != null) {
-            holder.nameTextView?.text = dogItem.name
-            holder.ageTextView?.text = resources.getString(R.string.dog_age, dogItem.age)
-            holder.hobbiesTextView?.text = resources.getString(R.string.dog_hobbies, dogItem.hobbies)
-        }
+        holder.hobbiesTextView?.text = resources?.getString(R.string.dog_hobbies, dogItem.hobbies)
     }
 }

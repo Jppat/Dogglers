@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/activity_grid_list.xml" value="0.38399998828125037" />
+        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/activity_grid_list.xml" value="0.16895999484375016" />
+        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/activity_horizontal_list.xml" value="0.19701086956521738" />
         <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/activity_main.xml" value="0.19701086956521738" />
         <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/activity_vertical_list.xml" value="0.45896656534954405" />
-        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/grid_list_item.xml" value="0.5145599842968755" />
-        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/vertical_horizontal_list_item.xml" value="0.1" />
+        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/grid_list_item.xml" value="0.25343999226562525" />
+        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/layout/vertical_horizontal_list_item.xml" value="0.25343999226562525" />
+        <entry key="..\:/Users/Patrick Panizales/Documents/android-studio-lab/android-basics-kotlin-dogglers-app-main/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>
